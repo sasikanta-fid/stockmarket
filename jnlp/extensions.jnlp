@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!-- Component extension descriptor  --> 
+<!-- 
+ Signed JNLP apps need jars which are signed by one entity only.
+ The Sun libraries are already signed by Sun, but do not need any extra permissions.
+ Thus, Sun jars are placed here, in this component extension, where they 
+ are not specified as having any special security needs, but are added to 
+ the application classpath
+-->
+<jnlp spec="1.0+" codebase="http://www.javapractices.com/apps/stocksmonitor"  href="extensions.jnlp"> 
+ <information> 
+  <title>Sun Libraries</title> 
+  <vendor>Sun Microsystems</vendor> 
+ </information>
+ <resources> 
+  <jar href="jh.jar"/>
+  <jar href="jlfgr-1_0.jar"/>
+ </resources> 
+ <component-desc/>
+</jnlp> 
+
+
